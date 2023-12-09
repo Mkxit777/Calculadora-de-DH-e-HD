@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #15b0f8; /* Cor de fundo principal */
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.popup-container {
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #2c3e50; /* Cor da borda */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input,
+button {
+    margin: 10px;
+    padding: 12px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #3498db; /* Cor da borda do input e do botão */
+    border-radius: 5px;
+    background-color: #2c3e50; /* Cor de fundo do input e do botão */
+    color: #fff; /* Cor do texto */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #34495e; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#resultados {
+    margin-top: 20px;
+    animation: fadeInResultados 0.5s ease-in-out;
+    background-color: #ecf0f1; /* Cor de fundo dos resultados */
+    padding: 15px;
+    border-radius: 8px;
+    color: #2c3e50; /* Cor do texto dos resultados */
+}
+
+@keyframes fadeInResultados {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
